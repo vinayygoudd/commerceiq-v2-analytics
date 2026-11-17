@@ -1,0 +1,278 @@
+{
+  "generated_at_utc": "2026-11-17T19:11:22Z",
+  "generation_mode": "deterministic_grounded_synthesis",
+  "period_kpi_movements": [
+    {
+      "order_year": "2017",
+      "orders_count": 44579,
+      "gmv_brl": 7142672.43,
+      "net_contribution_brl": 620568.54,
+      "net_margin_pct": 8.69,
+      "aov_brl": 160.23,
+      "return_rate_pct": 6.55
+    },
+    {
+      "order_year": "2018",
+      "orders_count": 53775,
+      "gmv_brl": 8643697.6,
+      "net_contribution_brl": 689115.59,
+      "net_margin_pct": 7.97,
+      "aov_brl": 160.74,
+      "return_rate_pct": 7.2
+    }
+  ],
+  "underperforming_categories": [
+    {
+      "product_category_english": "construction_tools_lights",
+      "units_sold": 304,
+      "gmv_brl": 48663.8,
+      "net_contribution_brl": 1494.72,
+      "net_margin_pct": 3.07,
+      "carrier_cost_share_pct": 14.22,
+      "return_rate_pct": 7.97
+    },
+    {
+      "product_category_english": "uncategorized",
+      "units_sold": 1603,
+      "gmv_brl": 207705.09,
+      "net_contribution_brl": 8339.34,
+      "net_margin_pct": 4.01,
+      "carrier_cost_share_pct": 12.35,
+      "return_rate_pct": 9.69
+    },
+    {
+      "product_category_english": "audio",
+      "units_sold": 364,
+      "gmv_brl": 56398.94,
+      "net_contribution_brl": 2664.99,
+      "net_margin_pct": 4.73,
+      "carrier_cost_share_pct": 9.41,
+      "return_rate_pct": 8.01
+    },
+    {
+      "product_category_english": "electronics",
+      "units_sold": 2767,
+      "gmv_brl": 206825.06,
+      "net_contribution_brl": 10280.59,
+      "net_margin_pct": 4.97,
+      "carrier_cost_share_pct": 20.96,
+      "return_rate_pct": 7.26
+    },
+    {
+      "product_category_english": "office_furniture",
+      "units_sold": 1691,
+      "gmv_brl": 342532.65,
+      "net_contribution_brl": 17364.83,
+      "net_margin_pct": 5.07,
+      "carrier_cost_share_pct": 18.22,
+      "return_rate_pct": 9.17
+    },
+    {
+      "product_category_english": "furniture_decor",
+      "units_sold": 8334,
+      "gmv_brl": 902511.79,
+      "net_contribution_brl": 48090.19,
+      "net_margin_pct": 5.33,
+      "carrier_cost_share_pct": 17.57,
+      "return_rate_pct": 8.01
+    },
+    {
+      "product_category_english": "home_confort",
+      "units_sold": 434,
+      "gmv_brl": 67073.27,
+      "net_contribution_brl": 3935.73,
+      "net_margin_pct": 5.87,
+      "carrier_cost_share_pct": 11.84,
+      "return_rate_pct": 8.39
+    },
+    {
+      "product_category_english": "furniture_living_room",
+      "units_sold": 503,
+      "gmv_brl": 86884.73,
+      "net_contribution_brl": 5224.68,
+      "net_margin_pct": 6.01,
+      "carrier_cost_share_pct": 18.9,
+      "return_rate_pct": 7.88
+    }
+  ],
+  "top_performing_categories": [
+    {
+      "product_category_english": "watches_gifts",
+      "units_sold": 5991,
+      "gmv_brl": 1305541.61,
+      "net_contribution_brl": 138146.61,
+      "net_margin_pct": 10.58
+    },
+    {
+      "product_category_english": "health_beauty",
+      "units_sold": 9670,
+      "gmv_brl": 1441248.07,
+      "net_contribution_brl": 134818.69,
+      "net_margin_pct": 9.35
+    },
+    {
+      "product_category_english": "sports_leisure",
+      "units_sold": 8641,
+      "gmv_brl": 1156656.48,
+      "net_contribution_brl": 100851.7,
+      "net_margin_pct": 8.72
+    },
+    {
+      "product_category_english": "bed_bath_table",
+      "units_sold": 11115,
+      "gmv_brl": 1241681.72,
+      "net_contribution_brl": 87778.4,
+      "net_margin_pct": 7.07
+    },
+    {
+      "product_category_english": "computers_accessories",
+      "units_sold": 7827,
+      "gmv_brl": 1059272.4,
+      "net_contribution_brl": 86013.71,
+      "net_margin_pct": 8.12
+    }
+  ],
+  "customer_segment_diagnostics": [
+    {
+      "loyalty_tier": "Standard",
+      "ever_had_late_delivery": 0,
+      "customers_count": 85708,
+      "repeat_rate_pct": 0.0,
+      "avg_ltv_brl": 160.8,
+      "avg_review_score": 4.21,
+      "avg_tickets_per_customer": 0.133
+    },
+    {
+      "loyalty_tier": "Standard",
+      "ever_had_late_delivery": 1,
+      "customers_count": 7391,
+      "repeat_rate_pct": 0.0,
+      "avg_ltv_brl": 173.58,
+      "avg_review_score": 2.56,
+      "avg_tickets_per_customer": 0.638
+    },
+    {
+      "loyalty_tier": "Silver",
+      "ever_had_late_delivery": 0,
+      "customers_count": 2413,
+      "repeat_rate_pct": 100.0,
+      "avg_ltv_brl": 288.45,
+      "avg_review_score": 4.23,
+      "avg_tickets_per_customer": 0.276
+    },
+    {
+      "loyalty_tier": "Silver",
+      "ever_had_late_delivery": 1,
+      "customers_count": 332,
+      "repeat_rate_pct": 100.0,
+      "avg_ltv_brl": 341.38,
+      "avg_review_score": 3.14,
+      "avg_tickets_per_customer": 0.922
+    },
+    {
+      "loyalty_tier": "Gold",
+      "ever_had_late_delivery": 0,
+      "customers_count": 210,
+      "repeat_rate_pct": 100.0,
+      "avg_ltv_brl": 536.57,
+      "avg_review_score": 4.36,
+      "avg_tickets_per_customer": 0.443
+    },
+    {
+      "loyalty_tier": "Gold",
+      "ever_had_late_delivery": 1,
+      "customers_count": 42,
+      "repeat_rate_pct": 100.0,
+      "avg_ltv_brl": 523.54,
+      "avg_review_score": 3.78,
+      "avg_tickets_per_customer": 1.024
+    }
+  ],
+  "marketing_channel_efficiency": [
+    {
+      "marketing_channel": "Organic / SEO",
+      "spend_brl": 0.0,
+      "acquired_customers": 13448,
+      "attributed_gmv_brl": 2243655.92,
+      "roas_x": NaN,
+      "effective_cac_brl": 0.0
+    },
+    {
+      "marketing_channel": "Influencer / Content",
+      "spend_brl": 161620.61,
+      "acquired_customers": 3842,
+      "attributed_gmv_brl": 627846.05,
+      "roas_x": 3.88,
+      "effective_cac_brl": 42.07
+    },
+    {
+      "marketing_channel": "Paid Search",
+      "spend_brl": 880190.92,
+      "acquired_customers": 23146,
+      "attributed_gmv_brl": 3851789.98,
+      "roas_x": 4.38,
+      "effective_cac_brl": 38.03
+    },
+    {
+      "marketing_channel": "Display / Retargeting",
+      "spend_brl": 223572.53,
+      "acquired_customers": 6743,
+      "attributed_gmv_brl": 1126047.79,
+      "roas_x": 5.04,
+      "effective_cac_brl": 33.16
+    },
+    {
+      "marketing_channel": "Paid Social",
+      "spend_brl": 713901.54,
+      "acquired_customers": 24622,
+      "attributed_gmv_brl": 4140177.72,
+      "roas_x": 5.8,
+      "effective_cac_brl": 28.99
+    },
+    {
+      "marketing_channel": "Price Comparison",
+      "spend_brl": 211989.6,
+      "acquired_customers": 7752,
+      "attributed_gmv_brl": 1267587.83,
+      "roas_x": 5.98,
+      "effective_cac_brl": 27.35
+    },
+    {
+      "marketing_channel": "Affiliate",
+      "spend_brl": 194497.86,
+      "acquired_customers": 7849,
+      "attributed_gmv_brl": 1305678.47,
+      "roas_x": 6.71,
+      "effective_cac_brl": 24.78
+    },
+    {
+      "marketing_channel": "CRM / Email",
+      "spend_brl": 125734.01,
+      "acquired_customers": 8694,
+      "attributed_gmv_brl": 1446088.36,
+      "roas_x": 11.5,
+      "effective_cac_brl": 14.46
+    }
+  ],
+  "evidence_backed_recommendations": [
+    {
+      "priority": 1,
+      "domain": "Profitability & Category Margin Recovery",
+      "finding": "Lowest-margin volume category `construction_tools_lights` operates at 3.07% net margin (carrier cost share: 14.22%, return rate: 7.97%), while `watches_gifts` generates R$ 138,146.61 in net contribution (10.58% margin).",
+      "action": "Re-index minimum free-freight thresholds and renegotiate carrier tier allocation on heavy/bulky SKUs where allocated carrier cost exceeds 12% of item GMV."
+    },
+    {
+      "priority": 2,
+      "domain": "Customer Retention & Delivery SLA Protection",
+      "finding": "Customers exposed to late deliveries experience a sharp drop in review scores (~4.29 to ~2.57 stars) and elevated support ticket volume, directly depressing repeat purchase conversion.",
+      "action": "Trigger automated proactive delay credits and route high-LTV cohorts away from high-late-rate interstate standard carrier lanes; deploy the 30-day post-delivery win-back voucher (EXP-01)."
+    },
+    {
+      "priority": 3,
+      "domain": "Marketing Budget Reallocation",
+      "finding": "Channel efficiency spans from `Organic / SEO` (ROAS nanx, CAC R$ 0.00) to `CRM / Email` (ROAS 11.50x, CAC R$ 14.46).",
+      "action": "Shift 15-20% of spend from the lowest-ROAS paid channel into high-ROAS retention/search campaigns focused on high-repeat categories (`bed_bath_table`, `health_beauty`)."
+    }
+  ],
+  "executive_narrative": "### Executive Performance Synthesis\n2017: 44,579 orders, R$ 7,142,672.43 GMV, 8.69% Net Margin, R$ 160.23 AOV | 2018: 53,775 orders, R$ 8,643,697.60 GMV, 7.97% Net Margin, R$ 160.74 AOV\n\n- **Profitability & Category Margin Recovery:** Lowest-margin volume category `construction_tools_lights` operates at 3.07% net margin (carrier cost share: 14.22%, return rate: 7.97%), while `watches_gifts` generates R$ 138,146.61 in net contribution (10.58% margin). **Action:** Re-index minimum free-freight thresholds and renegotiate carrier tier allocation on heavy/bulky SKUs where allocated carrier cost exceeds 12% of item GMV.\n- **Customer Retention & Delivery SLA Protection:** Customers exposed to late deliveries experience a sharp drop in review scores (~4.29 to ~2.57 stars) and elevated support ticket volume, directly depressing repeat purchase conversion. **Action:** Trigger automated proactive delay credits and route high-LTV cohorts away from high-late-rate interstate standard carrier lanes; deploy the 30-day post-delivery win-back voucher (EXP-01).\n- **Marketing Budget Reallocation:** Channel efficiency spans from `Organic / SEO` (ROAS nanx, CAC R$ 0.00) to `CRM / Email` (ROAS 11.50x, CAC R$ 14.46). **Action:** Shift 15-20% of spend from the lowest-ROAS paid channel into high-ROAS retention/search campaigns focused on high-repeat categories (`bed_bath_table`, `health_beauty`)."
+}

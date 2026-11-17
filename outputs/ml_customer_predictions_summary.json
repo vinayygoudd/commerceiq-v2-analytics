@@ -1,0 +1,82 @@
+{
+  "total_customers_scored": 96096,
+  "churn_model_evaluation": {
+    "model_name": "Customer_Churn_Prediction_Model",
+    "engine": "scikit-learn RandomForestClassifier",
+    "precision": 0.976,
+    "recall": 0.2288,
+    "f1_score": 0.3707,
+    "roc_auc": 0.6243,
+    "positive_rate_pct": 78.37,
+    "test_samples": 24024
+  },
+  "repeat_purchase_model_evaluation": {
+    "model_name": "Repeat_Purchase_Propensity_Model",
+    "engine": "scikit-learn RandomForestClassifier",
+    "precision": 0.0594,
+    "recall": 0.8077,
+    "f1_score": 0.1106,
+    "roc_auc": 0.7931,
+    "positive_rate_pct": 3.12,
+    "test_samples": 24024
+  },
+  "top_churn_drivers": {
+    "avg_customer_review_score": 0.4686,
+    "avg_delivery_variance_days": 0.2178,
+    "support_tickets_count": 0.1358,
+    "ever_had_late_delivery": 0.1036,
+    "avg_order_value_brl": 0.0186,
+    "customer_acquisition_cost_brl": 0.0142,
+    "cohort_tenure_months": 0.0136,
+    "ever_had_sla_breach": 0.0036
+  },
+  "top_repeat_purchase_drivers": {
+    "cohort_tenure_months": 0.2219,
+    "support_tickets_count": 0.1908,
+    "avg_customer_review_score": 0.1766,
+    "avg_delivery_variance_days": 0.1389,
+    "avg_order_value_brl": 0.0917,
+    "customer_acquisition_cost_brl": 0.0418,
+    "ever_had_late_delivery": 0.0338,
+    "canceled_orders": 0.0234
+  },
+  "risk_segment_summary": [
+    {
+      "customer_risk_segment": "Medium Churn Risk",
+      "customers_count": 43546,
+      "avg_ml_churn_prob": 0.45934997473935607,
+      "avg_ml_repeat_prob": 0.3902162954117485,
+      "actual_repeat_rate_pct": 1.97,
+      "avg_ltv_brl": 185.5,
+      "total_ltv_at_risk_brl": 8077585.82
+    },
+    {
+      "customer_risk_segment": "Stable / Low Risk",
+      "customers_count": 22541,
+      "avg_ml_churn_prob": 0.444691579787942,
+      "avg_ml_repeat_prob": 0.45188781775431436,
+      "actual_repeat_rate_pct": 2.68,
+      "avg_ltv_brl": 123.12,
+      "total_ltv_at_risk_brl": 2775151.79
+    },
+    {
+      "customer_risk_segment": "High Churn Risk",
+      "customers_count": 17206,
+      "avg_ml_churn_prob": 0.8878472625828199,
+      "avg_ml_repeat_prob": 0.3250006218760897,
+      "actual_repeat_rate_pct": 0.96,
+      "avg_ltv_brl": 187.23,
+      "total_ltv_at_risk_brl": 3221455.99
+    },
+    {
+      "customer_risk_segment": "High Repeat Propensity",
+      "customers_count": 12803,
+      "avg_ml_churn_prob": 0.4360463094587206,
+      "avg_ml_repeat_prob": 0.5786951651956572,
+      "actual_repeat_rate_pct": 10.68,
+      "avg_ltv_brl": 151.11,
+      "total_ltv_at_risk_brl": 1934678.52
+    }
+  ],
+  "powerbi_mart_exported": "C:\\Users\\vinay\\Downloads\\commerceiq_app\\commerceiq_platform\\bi\\powerbi_star_schema\\mart_customer_risk_segments.csv"
+}

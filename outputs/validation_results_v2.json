@@ -1,0 +1,304 @@
+{
+  "summary": {
+    "passed": 46,
+    "warnings": 3,
+    "failed": 0,
+    "total_checks": 49
+  },
+  "checks": [
+    {
+      "category": "Original Preservation",
+      "check_name": "Unchanged Integrity: olist_customers_dataset.csv",
+      "status": "PASS",
+      "details": "Rows=99,441, Cols=5, SHA256 match=True"
+    },
+    {
+      "category": "Original Preservation",
+      "check_name": "Unchanged Integrity: olist_geolocation_dataset.csv",
+      "status": "PASS",
+      "details": "Rows=1,000,163, Cols=5, SHA256 match=True"
+    },
+    {
+      "category": "Original Preservation",
+      "check_name": "Unchanged Integrity: olist_order_items_dataset.csv",
+      "status": "PASS",
+      "details": "Rows=112,650, Cols=7, SHA256 match=True"
+    },
+    {
+      "category": "Original Preservation",
+      "check_name": "Unchanged Integrity: olist_order_payments_dataset.csv",
+      "status": "PASS",
+      "details": "Rows=103,886, Cols=5, SHA256 match=True"
+    },
+    {
+      "category": "Original Preservation",
+      "check_name": "Unchanged Integrity: olist_order_reviews_dataset.csv",
+      "status": "PASS",
+      "details": "Rows=99,224, Cols=7, SHA256 match=True"
+    },
+    {
+      "category": "Original Preservation",
+      "check_name": "Unchanged Integrity: olist_orders_dataset.csv",
+      "status": "PASS",
+      "details": "Rows=99,441, Cols=8, SHA256 match=True"
+    },
+    {
+      "category": "Original Preservation",
+      "check_name": "Unchanged Integrity: olist_products_dataset.csv",
+      "status": "PASS",
+      "details": "Rows=32,951, Cols=9, SHA256 match=True"
+    },
+    {
+      "category": "Original Preservation",
+      "check_name": "Unchanged Integrity: olist_sellers_dataset.csv",
+      "status": "PASS",
+      "details": "Rows=3,095, Cols=4, SHA256 match=True"
+    },
+    {
+      "category": "Original Preservation",
+      "check_name": "Unchanged Integrity: product_category_name_translation.csv",
+      "status": "PASS",
+      "details": "Rows=71, Cols=2, SHA256 match=True"
+    },
+    {
+      "category": "Olist Baseline Audit",
+      "check_name": "Orders Without Order Items",
+      "status": "WARN",
+      "details": "775 orders have no line items in original Olist"
+    },
+    {
+      "category": "Olist Baseline Audit",
+      "check_name": "Shared Multi-Order review_id",
+      "status": "WARN",
+      "details": "814 review rows share a review_id across split orders; composite (review_id, order_id) is unique"
+    },
+    {
+      "category": "Olist Baseline Audit",
+      "check_name": "Untranslated Categories in Olist",
+      "status": "WARN",
+      "details": "2 categories absent in Olist translation CSV: ['pc_gamer', 'portateis_cozinha_e_preparadores_de_alimentos']"
+    },
+    {
+      "category": "Schema & PKs",
+      "check_name": "Schema, PK & Provenance: commerceiq_marketing_campaigns.csv",
+      "status": "PASS",
+      "details": "Rows=90, Cols=14, ColsMatch=True, PK_OK=True, NoDups=True, Prov=True"
+    },
+    {
+      "category": "Schema & PKs",
+      "check_name": "Schema, PK & Provenance: commerceiq_customer_acquisition_attribution.csv",
+      "status": "PASS",
+      "details": "Rows=96,096, Cols=15, ColsMatch=True, PK_OK=True, NoDups=True, Prov=True"
+    },
+    {
+      "category": "Schema & PKs",
+      "check_name": "Schema, PK & Provenance: commerceiq_product_costs_pricing.csv",
+      "status": "PASS",
+      "details": "Rows=32,951, Cols=13, ColsMatch=True, PK_OK=True, NoDups=True, Prov=True"
+    },
+    {
+      "category": "Schema & PKs",
+      "check_name": "Schema, PK & Provenance: commerceiq_returns_refunds.csv",
+      "status": "PASS",
+      "details": "Rows=7,616, Cols=17, ColsMatch=True, PK_OK=True, NoDups=True, Prov=True"
+    },
+    {
+      "category": "Schema & PKs",
+      "check_name": "Composite Key Uniqueness (order_id, order_item_id): commerceiq_returns_refunds.csv",
+      "status": "PASS",
+      "details": "Duplicates=0"
+    },
+    {
+      "category": "Schema & PKs",
+      "check_name": "Schema, PK & Provenance: commerceiq_cancellations_refunds.csv",
+      "status": "PASS",
+      "details": "Rows=706, Cols=18, ColsMatch=True, PK_OK=True, NoDups=True, Prov=True"
+    },
+    {
+      "category": "Schema & PKs",
+      "check_name": "Schema, PK & Provenance: commerceiq_shipment_tracking_logistics.csv",
+      "status": "PASS",
+      "details": "Rows=97,658, Cols=21, ColsMatch=True, PK_OK=True, NoDups=True, Prov=True"
+    },
+    {
+      "category": "Schema & PKs",
+      "check_name": "Composite Key Uniqueness (order_id): commerceiq_shipment_tracking_logistics.csv",
+      "status": "PASS",
+      "details": "Duplicates=0"
+    },
+    {
+      "category": "Schema & PKs",
+      "check_name": "Schema, PK & Provenance: commerceiq_customer_sessions_funnel.csv",
+      "status": "PASS",
+      "details": "Rows=145,458, Cols=18, ColsMatch=True, PK_OK=True, NoDups=True, Prov=True"
+    },
+    {
+      "category": "Schema & PKs",
+      "check_name": "Schema, PK & Provenance: commerceiq_inventory_snapshots.csv",
+      "status": "PASS",
+      "details": "Rows=137,792, Cols=19, ColsMatch=True, PK_OK=True, NoDups=True, Prov=True"
+    },
+    {
+      "category": "Schema & PKs",
+      "check_name": "Composite Key Uniqueness (snapshot_date, seller_id, product_id): commerceiq_inventory_snapshots.csv",
+      "status": "PASS",
+      "details": "Duplicates=0"
+    },
+    {
+      "category": "Schema & PKs",
+      "check_name": "Schema, PK & Provenance: commerceiq_customer_support_tickets.csv",
+      "status": "PASS",
+      "details": "Rows=17,201, Cols=15, ColsMatch=True, PK_OK=True, NoDups=True, Prov=True"
+    },
+    {
+      "category": "Correction 1 (Returns vs Cancellations)",
+      "check_name": "Zero Canceled Orders in commerceiq_returns_refunds.csv",
+      "status": "PASS",
+      "details": "100% of 7,616 product returns belong to delivered orders=True"
+    },
+    {
+      "category": "Correction 1 (Returns vs Cancellations)",
+      "check_name": "Cancellations Reference Valid Olist Orders & Order Items",
+      "status": "PASS",
+      "details": "Rows=706, Covers all 625 canceled orders=True, ItemFK=True"
+    },
+    {
+      "category": "Correction 1 (Returns vs Cancellations)",
+      "check_name": "Cancellation Refunds Do Not Exceed Original Olist Payment",
+      "status": "PASS",
+      "details": "Row-level check=True, Order-level payment cap check=True"
+    },
+    {
+      "category": "Correction 2 (Shipment Eligibility)",
+      "check_name": "Zero Shipments for Cancelled-Before-Shipment or Unshipped Orders",
+      "status": "PASS",
+      "details": "Plausible shipments=97,658 (excludes 1,783 unshipped/pre-ship canceled orders)=True"
+    },
+    {
+      "category": "Correction 2 (Shipment Eligibility)",
+      "check_name": "Delivery Timestamps & Metrics Restricted Strictly to Delivered Orders",
+      "status": "PASS",
+      "details": "Delivered with metrics=96,470 (True), Non-delivered with null delivery metrics=1,188 (True)"
+    },
+    {
+      "category": "Correction 2 (Shipment Eligibility)",
+      "check_name": "Freight Margin Financial Consistency",
+      "status": "PASS",
+      "details": "freight_margin_brl == customer_freight_charged_brl - actual_carrier_cost_brl=True"
+    },
+    {
+      "category": "Correction 3 (Customer Sessions)",
+      "check_name": "No Forced 1:1 Session-Per-Order Lock & Multi-Session Journeys Present",
+      "status": "PASS",
+      "details": "Total sessions=145,458, Converting sessions=73,461 (< 99,441 orders), Multi-session customers=43,701, Zero-conversion customers=6,631"
+    },
+    {
+      "category": "Correction 3 (Customer Sessions)",
+      "check_name": "Converted Session FK, Non-Predated Order Timestamp & Order_Placed vs Delivered Separation",
+      "status": "PASS",
+      "details": "ValidOrderFK=True, NotPredated=True, Order_Placed_Stage=True, Placed(73,461) > Delivered(71,237)"
+    },
+    {
+      "category": "Correction 4 (Historical Inventory)",
+      "check_name": "4 Monthly Snapshots & Exact Stock Flow Conservation",
+      "status": "PASS",
+      "details": "Snapshots=['2018-07-01', '2018-08-01', '2018-09-01', '2018-10-01'] (137,792 rows), FlowConservation=True, InterMonthContinuity=True, AvailOK=True"
+    },
+    {
+      "category": "Foreign-Key Integrity",
+      "check_name": "Acquisition -> Customers",
+      "status": "PASS",
+      "details": "100% valid=True"
+    },
+    {
+      "category": "Foreign-Key Integrity",
+      "check_name": "Acquisition -> Campaigns",
+      "status": "PASS",
+      "details": "100% valid=True"
+    },
+    {
+      "category": "Foreign-Key Integrity",
+      "check_name": "Product Costs -> Products",
+      "status": "PASS",
+      "details": "100% valid=True"
+    },
+    {
+      "category": "Foreign-Key Integrity",
+      "check_name": "Returns -> Orders",
+      "status": "PASS",
+      "details": "100% valid=True"
+    },
+    {
+      "category": "Foreign-Key Integrity",
+      "check_name": "Returns -> Order Items",
+      "status": "PASS",
+      "details": "100% valid=True"
+    },
+    {
+      "category": "Foreign-Key Integrity",
+      "check_name": "Cancellations -> Orders",
+      "status": "PASS",
+      "details": "100% valid=True"
+    },
+    {
+      "category": "Foreign-Key Integrity",
+      "check_name": "Cancellations -> Customers",
+      "status": "PASS",
+      "details": "100% valid=True"
+    },
+    {
+      "category": "Foreign-Key Integrity",
+      "check_name": "Shipments -> Orders",
+      "status": "PASS",
+      "details": "100% valid=True"
+    },
+    {
+      "category": "Foreign-Key Integrity",
+      "check_name": "Shipments -> Sellers",
+      "status": "PASS",
+      "details": "100% valid=True"
+    },
+    {
+      "category": "Foreign-Key Integrity",
+      "check_name": "Sessions -> Customers",
+      "status": "PASS",
+      "details": "100% valid=True"
+    },
+    {
+      "category": "Foreign-Key Integrity",
+      "check_name": "Sessions -> Campaigns",
+      "status": "PASS",
+      "details": "100% valid=True"
+    },
+    {
+      "category": "Foreign-Key Integrity",
+      "check_name": "Inventory -> Sellers",
+      "status": "PASS",
+      "details": "100% valid=True"
+    },
+    {
+      "category": "Foreign-Key Integrity",
+      "check_name": "Inventory -> Products",
+      "status": "PASS",
+      "details": "100% valid=True"
+    },
+    {
+      "category": "Foreign-Key Integrity",
+      "check_name": "Tickets -> Orders",
+      "status": "PASS",
+      "details": "100% valid=True"
+    },
+    {
+      "category": "Foreign-Key Integrity",
+      "check_name": "Tickets -> Customers",
+      "status": "PASS",
+      "details": "100% valid=True"
+    },
+    {
+      "category": "Synthetic Behavioural Assumptions",
+      "check_name": "Engineered Assumption Check: Late Delivery -> Lower Review Score (Delivered Orders Only)",
+      "status": "PASS",
+      "details": "On-time avg=4.29 vs Late avg=2.57 (synthetic design assumption)"
+    }
+  ]
+}

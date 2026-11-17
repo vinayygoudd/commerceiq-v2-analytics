@@ -1,0 +1,128 @@
+{
+  "run_id": "RUN-20261117-191646",
+  "timestamp_utc": "2026-11-17T19:16:46Z",
+  "data_quality_gate": {
+    "status": "PASSED",
+    "passed": 46,
+    "warnings": 3,
+    "failed": 0,
+    "total_checks": 49
+  },
+  "evaluated_kpis_count": 10,
+  "kpi_snapshots": [
+    {
+      "kpi_id": "gross_merchandise_value_brl",
+      "name": "Gross Merchandise Value (GMV)",
+      "domain": "Revenue & Sales",
+      "value": 15843553.24,
+      "unit": "BRL",
+      "provenance": "Original Olist (order_items)",
+      "threshold_breached": false
+    },
+    {
+      "kpi_id": "net_contribution_margin_pct",
+      "name": "Net Contribution Margin %",
+      "domain": "Profitability & Pricing",
+      "value": 8.29,
+      "unit": "pct",
+      "provenance": "Hybrid (Olist Revenue + Synthetic COGS, Commission, Tax, Carrier Cost, Returns & Cancellations)",
+      "threshold_breached": true
+    },
+    {
+      "kpi_id": "repeat_purchase_rate_pct",
+      "name": "Customer Repeat Purchase Rate %",
+      "domain": "Customer Retention & Cohorts",
+      "value": 3.12,
+      "unit": "pct",
+      "provenance": "Original Olist (customers + orders)",
+      "threshold_breached": true
+    },
+    {
+      "kpi_id": "session_to_order_conversion_pct",
+      "name": "Session-to-Order Placement Conversion %",
+      "domain": "Acquisition & Funnel",
+      "value": 50.5,
+      "unit": "pct",
+      "provenance": "Synthetic CommerceIQ v2 (customer_sessions_funnel)",
+      "threshold_breached": false
+    },
+    {
+      "kpi_id": "paid_marketing_roas",
+      "name": "Paid Marketing ROAS",
+      "domain": "Marketing Effectiveness",
+      "value": 6.37,
+      "unit": "ratio_x",
+      "provenance": "Hybrid (Olist LTV GMV + Synthetic Campaign Spend)",
+      "threshold_breached": false
+    },
+    {
+      "kpi_id": "delivered_late_rate_pct",
+      "name": "Late Delivery Rate % (Delivered Orders Only)",
+      "domain": "Delivery & Logistics",
+      "value": 8.11,
+      "unit": "pct",
+      "provenance": "Original Olist Timestamps + Synthetic Carrier Tracking",
+      "threshold_breached": false
+    },
+    {
+      "kpi_id": "post_delivery_return_rate_pct",
+      "name": "Post-Delivery Item Return Rate %",
+      "domain": "Returns & Refunds",
+      "value": 6.91,
+      "unit": "pct",
+      "provenance": "Synthetic CommerceIQ v2 (returns_refunds on Delivered Olist Items)",
+      "threshold_breached": false
+    },
+    {
+      "kpi_id": "order_cancellation_rate_pct",
+      "name": "Order Cancellation Rate %",
+      "domain": "Cancellations & Refunds",
+      "value": 0.63,
+      "unit": "pct",
+      "provenance": "Original Olist (orders) + Synthetic Cancellation Ledger",
+      "threshold_breached": false
+    },
+    {
+      "kpi_id": "inventory_stockout_rate_pct",
+      "name": "Monthly SKU-Seller Stockout Rate %",
+      "domain": "Inventory & Supply Chain",
+      "value": 0.05,
+      "unit": "pct",
+      "provenance": "Synthetic CommerceIQ v2 (4-Period Historical Inventory)",
+      "threshold_breached": false
+    },
+    {
+      "kpi_id": "support_sla_breach_rate_pct",
+      "name": "Support Ticket 48h SLA Breach Rate %",
+      "domain": "Customer Experience",
+      "value": 11.76,
+      "unit": "pct",
+      "provenance": "Synthetic CommerceIQ v2 (customer_support_tickets)",
+      "threshold_breached": false
+    }
+  ],
+  "triggered_alerts_count": 2,
+  "triggered_alerts": [
+    {
+      "kpi_id": "net_contribution_margin_pct",
+      "kpi_name": "Net Contribution Margin %",
+      "observed_value": 8.29,
+      "operator": "<",
+      "threshold": 15.0,
+      "severity": "HIGH",
+      "message": "Net contribution margin fell below 15.0% floor",
+      "recommended_ai_investigation": "Trigger CommerceIQAIOrchestrator on 'Net Contribution Margin %'"
+    },
+    {
+      "kpi_id": "repeat_purchase_rate_pct",
+      "kpi_name": "Customer Repeat Purchase Rate %",
+      "observed_value": 3.12,
+      "operator": "<",
+      "threshold": 3.5,
+      "severity": "MEDIUM",
+      "message": "Repeat purchase rate below 3.5% target",
+      "recommended_ai_investigation": "Trigger CommerceIQAIOrchestrator on 'Customer Repeat Purchase Rate %'"
+    }
+  ],
+  "log_file": "logs/automation_execution.log"
+}

@@ -1,0 +1,15 @@
+2026-11-18 00:46:46,084 | INFO | Starting CommerceIQ automated pipeline run RUN-20261117-191646
+2026-11-18 00:46:46,085 | INFO | Data Quality Gate: passed=46, warnings=3, failed=0 -> GatePassed=True
+2026-11-18 00:46:46,233 | INFO | Evaluated KPI gross_merchandise_value_brl = 15843553.24 (BRL) | Breached=False
+2026-11-18 00:46:46,362 | INFO | Evaluated KPI net_contribution_margin_pct = 8.29 (pct) | Breached=True
+2026-11-18 00:46:46,362 | WARNING | ALERT [HIGH]: Net contribution margin fell below 15.0% floor (observed=8.29)
+2026-11-18 00:46:46,433 | INFO | Evaluated KPI repeat_purchase_rate_pct = 3.12 (pct) | Breached=True
+2026-11-18 00:46:46,433 | WARNING | ALERT [MEDIUM]: Repeat purchase rate below 3.5% target (observed=3.12)
+2026-11-18 00:46:46,515 | INFO | Evaluated KPI session_to_order_conversion_pct = 50.5 (pct) | Breached=False
+2026-11-18 00:46:46,518 | INFO | Evaluated KPI paid_marketing_roas = 6.37 (ratio_x) | Breached=False
+2026-11-18 00:46:46,579 | INFO | Evaluated KPI delivered_late_rate_pct = 8.11 (pct) | Breached=False
+2026-11-18 00:46:46,736 | INFO | Evaluated KPI post_delivery_return_rate_pct = 6.91 (pct) | Breached=False
+2026-11-18 00:46:46,818 | INFO | Evaluated KPI order_cancellation_rate_pct = 0.63 (pct) | Breached=False
+2026-11-18 00:46:46,892 | INFO | Evaluated KPI inventory_stockout_rate_pct = 0.05 (pct) | Breached=False
+2026-11-18 00:46:46,903 | INFO | Evaluated KPI support_sla_breach_rate_pct = 11.76 (pct) | Breached=False
+2026-11-18 00:46:46,935 | INFO | Completed automated pipeline RUN-20261117-191646 successfully. Alerts=2

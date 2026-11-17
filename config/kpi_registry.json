@@ -1,0 +1,140 @@
+{
+  "platform": "CommerceIQ",
+  "version": "2.0.0",
+  "provenance_policy": {
+    "original_olist_tables": [
+      "olist_customers_dataset",
+      "olist_geolocation_dataset",
+      "olist_order_items_dataset",
+      "olist_order_payments_dataset",
+      "olist_order_reviews_dataset",
+      "olist_orders_dataset",
+      "olist_products_dataset",
+      "olist_sellers_dataset",
+      "product_category_name_translation"
+    ],
+    "synthetic_commerceiq_tables": [
+      "commerceiq_marketing_campaigns",
+      "commerceiq_customer_acquisition_attribution",
+      "commerceiq_product_costs_pricing",
+      "commerceiq_returns_refunds",
+      "commerceiq_cancellations_refunds",
+      "commerceiq_shipment_tracking_logistics",
+      "commerceiq_customer_sessions_funnel",
+      "commerceiq_inventory_snapshots",
+      "commerceiq_customer_support_tickets"
+    ]
+  },
+  "kpis": [
+    {
+      "kpi_id": "gross_merchandise_value_brl",
+      "name": "Gross Merchandise Value (GMV)",
+      "domain": "Revenue & Sales",
+      "unit": "BRL",
+      "provenance": "Original Olist (order_items)",
+      "formula_description": "Sum of item selling price plus customer freight charged across itemized orders.",
+      "sql_expression": "ROUND(SUM(gross_item_revenue_brl), 2)",
+      "source_view": "vw_fact_order_items",
+      "alert_rule": null
+    },
+    {
+      "kpi_id": "net_contribution_margin_pct",
+      "name": "Net Contribution Margin %",
+      "domain": "Profitability & Pricing",
+      "unit": "pct",
+      "provenance": "Hybrid (Olist Revenue + Synthetic COGS, Commission, Tax, Carrier Cost, Returns & Cancellations)",
+      "formula_description": "(Gross Revenue - ICMS Tax - Marketplace Commission - Unit COGS - Packaging - Carrier Cost - Return Refunds - Cancellation Refunds - Reverse/Intercept Costs) / Gross Revenue.",
+      "sql_expression": "ROUND(100.0 * SUM(net_contribution_brl) / NULLIF(SUM(gross_item_revenue_brl), 0), 2)",
+      "source_view": "vw_fact_order_items",
+      "alert_rule": {"operator": "<", "threshold": 15.0, "severity": "HIGH", "message": "Net contribution margin fell below 15.0% floor"}
+    },
+    {
+      "kpi_id": "repeat_purchase_rate_pct",
+      "name": "Customer Repeat Purchase Rate %",
+      "domain": "Customer Retention & Cohorts",
+      "unit": "pct",
+      "provenance": "Original Olist (customers + orders)",
+      "formula_description": "Percentage of unique customers (customer_unique_id) placing 2 or more orders.",
+      "sql_expression": "ROUND(100.0 * SUM(CASE WHEN total_orders >= 2 THEN 1 ELSE 0 END) / NULLIF(COUNT(*), 0), 2)",
+      "source_view": "vw_customer_summary",
+      "alert_rule": {"operator": "<", "threshold": 3.5, "severity": "MEDIUM", "message": "Repeat purchase rate below 3.5% target"}
+    },
+    {
+      "kpi_id": "session_to_order_conversion_pct",
+      "name": "Session-to-Order Placement Conversion %",
+      "domain": "Acquisition & Funnel",
+      "unit": "pct",
+      "provenance": "Synthetic CommerceIQ v2 (customer_sessions_funnel)",
+      "formula_description": "Percentage of tracked digital sessions resulting in Order_Placed (distinct from physical delivery).",
+      "sql_expression": "ROUND(100.0 * SUM(CASE WHEN order_placed = 1 THEN 1 ELSE 0 END) / NULLIF(COUNT(*), 0), 2)",
+      "source_view": "commerceiq_customer_sessions_funnel",
+      "alert_rule": {"operator": "<", "threshold": 45.0, "severity": "MEDIUM", "message": "Tracked session order-placement rate dropped below 45.0%"}
+    },
+    {
+      "kpi_id": "paid_marketing_roas",
+      "name": "Paid Marketing ROAS",
+      "domain": "Marketing Effectiveness",
+      "unit": "ratio_x",
+      "provenance": "Hybrid (Olist LTV GMV + Synthetic Campaign Spend)",
+      "formula_description": "Total attributed customer GMV divided by actual paid media spend across non-organic campaigns.",
+      "sql_expression": "ROUND(SUM(attributed_gmv_brl) / NULLIF(SUM(actual_spend_brl), 0), 2)",
+      "source_view": "vw_marketing_roas",
+      "alert_rule": {"operator": "<", "threshold": 3.5, "severity": "HIGH", "message": "Paid marketing ROAS dropped below 3.5x target"}
+    },
+    {
+      "kpi_id": "delivered_late_rate_pct",
+      "name": "Late Delivery Rate % (Delivered Orders Only)",
+      "domain": "Delivery & Logistics",
+      "unit": "pct",
+      "provenance": "Original Olist Timestamps + Synthetic Carrier Tracking",
+      "formula_description": "Percentage of delivered orders (fulfillment_state = 'Delivered') arriving after order_estimated_delivery_date.",
+      "sql_expression": "ROUND(100.0 * SUM(CASE WHEN is_late_delivery = 1 THEN 1 ELSE 0 END) / NULLIF(COUNT(*), 0), 2)",
+      "source_view": "vw_carrier_performance",
+      "alert_rule": {"operator": ">", "threshold": 8.5, "severity": "HIGH", "message": "Late delivery rate exceeded 8.5% SLA threshold"}
+    },
+    {
+      "kpi_id": "post_delivery_return_rate_pct",
+      "name": "Post-Delivery Item Return Rate %",
+      "domain": "Returns & Refunds",
+      "unit": "pct",
+      "provenance": "Synthetic CommerceIQ v2 (returns_refunds on Delivered Olist Items)",
+      "formula_description": "Percentage of delivered order line items with a post-delivery RMA record (excludes pre-delivery cancellations).",
+      "sql_expression": "ROUND(100.0 * SUM(CASE WHEN has_return = 1 THEN 1 ELSE 0 END) / NULLIF(SUM(CASE WHEN order_status = 'delivered' THEN 1 ELSE 0 END), 0), 2)",
+      "source_view": "vw_fact_order_items",
+      "alert_rule": {"operator": ">", "threshold": 8.0, "severity": "MEDIUM", "message": "Post-delivery product return rate exceeded 8.0%"}
+    },
+    {
+      "kpi_id": "order_cancellation_rate_pct",
+      "name": "Order Cancellation Rate %",
+      "domain": "Cancellations & Refunds",
+      "unit": "pct",
+      "provenance": "Original Olist (orders) + Synthetic Cancellation Ledger",
+      "formula_description": "Percentage of total Olist orders with order_status = 'canceled'.",
+      "sql_expression": "ROUND(100.0 * SUM(CASE WHEN order_status = 'canceled' THEN 1 ELSE 0 END) / NULLIF(COUNT(*), 0), 2)",
+      "source_view": "olist_orders_dataset",
+      "alert_rule": {"operator": ">", "threshold": 1.0, "severity": "LOW", "message": "Order cancellation rate exceeded 1.0%"}
+    },
+    {
+      "kpi_id": "inventory_stockout_rate_pct",
+      "name": "Monthly SKU-Seller Stockout Rate %",
+      "domain": "Inventory & Supply Chain",
+      "unit": "pct",
+      "provenance": "Synthetic CommerceIQ v2 (4-Period Historical Inventory)",
+      "formula_description": "Percentage of active (seller_id, product_id) snapshots experiencing stockout_occurred = True.",
+      "sql_expression": "ROUND(100.0 * SUM(CASE WHEN stockout_occurred = 1 THEN 1 ELSE 0 END) / NULLIF(COUNT(*), 0), 2)",
+      "source_view": "commerceiq_inventory_snapshots",
+      "alert_rule": {"operator": ">", "threshold": 0.5, "severity": "HIGH", "message": "Inventory stockout rate exceeded 0.5% threshold"}
+    },
+    {
+      "kpi_id": "support_sla_breach_rate_pct",
+      "name": "Support Ticket 48h SLA Breach Rate %",
+      "domain": "Customer Experience",
+      "unit": "pct",
+      "provenance": "Synthetic CommerceIQ v2 (customer_support_tickets)",
+      "formula_description": "Percentage of support tickets exceeding the 48-hour resolution SLA.",
+      "sql_expression": "ROUND(100.0 * SUM(CASE WHEN sla_breached = 1 THEN 1 ELSE 0 END) / NULLIF(COUNT(*), 0), 2)",
+      "source_view": "commerceiq_customer_support_tickets",
+      "alert_rule": {"operator": ">", "threshold": 15.0, "severity": "MEDIUM", "message": "Support 48h SLA breach rate exceeded 15.0%"}
+    }
+  ]
+}

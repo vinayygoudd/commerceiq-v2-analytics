@@ -1,0 +1,68 @@
+// ============================================================================
+// CommerceIQ v2 — Official Power BI DAX Measures (Synchronized with kpi_registry.json)
+// ============================================================================
+
+Gross Merchandise Value (BRL) =
+SUM(vw_fact_order_items[gross_item_revenue_brl])
+
+Net Contribution Margin (BRL) =
+SUM(vw_fact_order_items[net_contribution_brl])
+
+Net Contribution Margin % =
+DIVIDE([Net Contribution Margin (BRL)], [Gross Merchandise Value (BRL)], 0)
+
+Customer Repeat Purchase Rate % =
+DIVIDE(
+    CALCULATE(COUNTROWS(vw_customer_summary), vw_customer_summary[is_repeat_customer] = 1),
+    COUNTROWS(vw_customer_summary),
+    0
+)
+
+Session to Order Placed Conversion % =
+DIVIDE(
+    CALCULATE(COUNTROWS(commerceiq_customer_sessions_funnel), commerceiq_customer_sessions_funnel[order_placed] = TRUE()),
+    COUNTROWS(commerceiq_customer_sessions_funnel),
+    0
+)
+
+Order Placed to Delivered Completion % =
+DIVIDE(
+    CALCULATE(COUNTROWS(commerceiq_customer_sessions_funnel), commerceiq_customer_sessions_funnel[order_delivered] = TRUE()),
+    CALCULATE(COUNTROWS(commerceiq_customer_sessions_funnel), commerceiq_customer_sessions_funnel[order_placed] = TRUE()),
+    0
+)
+
+Paid Marketing ROAS (x) =
+DIVIDE(
+    CALCULATE(SUM(vw_marketing_roas[attributed_gmv_brl]), vw_marketing_roas[actual_spend_brl] > 0),
+    CALCULATE(SUM(vw_marketing_roas[actual_spend_brl]), vw_marketing_roas[actual_spend_brl] > 0),
+    0
+)
+
+Late Delivery Rate % (Delivered Only) =
+DIVIDE(
+    CALCULATE(COUNTROWS(vw_carrier_performance), vw_carrier_performance[is_late_delivery] = 1),
+    COUNTROWS(vw_carrier_performance),
+    0
+)
+
+Post-Delivery Return Rate % =
+DIVIDE(
+    CALCULATE(COUNTROWS(vw_fact_order_items), vw_fact_order_items[has_return] = 1),
+    CALCULATE(COUNTROWS(vw_fact_order_items), vw_fact_order_items[order_status] = "delivered"),
+    0
+)
+
+Order Cancellation Rate % =
+DIVIDE(
+    CALCULATE(COUNTROWS(olist_orders_dataset), olist_orders_dataset[order_status] = "canceled"),
+    COUNTROWS(olist_orders_dataset),
+    0
+)
+
+Support 48h SLA Breach Rate % =
+DIVIDE(
+    CALCULATE(COUNTROWS(commerceiq_customer_support_tickets), commerceiq_customer_support_tickets[sla_breached] = TRUE()),
+    COUNTROWS(commerceiq_customer_support_tickets),
+    0
+)

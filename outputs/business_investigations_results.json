@@ -1,0 +1,1030 @@
+{
+  "revenue_profitability_summary": {
+    "itemized_orders": 98666.0,
+    "total_line_items": 112650.0,
+    "total_item_price_brl": 13591643.7,
+    "total_freight_charged_brl": 2251909.54,
+    "gross_merchandise_value_brl": 15843553.24,
+    "total_icms_tax_brl": 1989017.5,
+    "total_olist_commission_brl": 1838236.07,
+    "total_unit_cogs_brl": 7316445.64,
+    "total_packaging_cost_brl": 234175.03,
+    "total_carrier_cost_brl": 2069696.19,
+    "total_return_refunds_brl": 844184.56,
+    "total_reverse_shipping_brl": 131319.91,
+    "total_item_cancel_refunds_brl": 105432.01,
+    "total_cancel_intercept_brl": 946.18,
+    "total_net_contribution_brl": 1314068.83,
+    "net_contribution_margin_pct": 8.29
+  },
+  "overall_retention_summary": {
+    "unique_customers": 96096.0,
+    "repeat_customers": 2997.0,
+    "repeat_purchase_rate_pct": 3.12,
+    "repeat_customer_avg_ltv_brl": 314.99,
+    "one_time_customer_avg_ltv_brl": 161.82
+  },
+  "monthly_trends": [
+    {
+      "order_year_month": "2017-01",
+      "orders_count": 789,
+      "gmv_brl": 137188.49,
+      "net_contribution_brl": 13433.71,
+      "net_margin_pct": 9.79
+    },
+    {
+      "order_year_month": "2017-02",
+      "orders_count": 1733,
+      "gmv_brl": 286280.62,
+      "net_contribution_brl": 32348.96,
+      "net_margin_pct": 11.3
+    },
+    {
+      "order_year_month": "2017-03",
+      "orders_count": 2641,
+      "gmv_brl": 432048.59,
+      "net_contribution_brl": 38221.42,
+      "net_margin_pct": 8.85
+    },
+    {
+      "order_year_month": "2017-04",
+      "orders_count": 2391,
+      "gmv_brl": 412422.24,
+      "net_contribution_brl": 40464.9,
+      "net_margin_pct": 9.81
+    },
+    {
+      "order_year_month": "2017-05",
+      "orders_count": 3660,
+      "gmv_brl": 586190.95,
+      "net_contribution_brl": 56217.82,
+      "net_margin_pct": 9.59
+    },
+    {
+      "order_year_month": "2017-06",
+      "orders_count": 3217,
+      "gmv_brl": 502963.04,
+      "net_contribution_brl": 49747.98,
+      "net_margin_pct": 9.89
+    },
+    {
+      "order_year_month": "2017-07",
+      "orders_count": 3969,
+      "gmv_brl": 584971.62,
+      "net_contribution_brl": 50361.56,
+      "net_margin_pct": 8.61
+    },
+    {
+      "order_year_month": "2017-08",
+      "orders_count": 4293,
+      "gmv_brl": 668204.6,
+      "net_contribution_brl": 57624.71,
+      "net_margin_pct": 8.62
+    },
+    {
+      "order_year_month": "2017-09",
+      "orders_count": 4243,
+      "gmv_brl": 720398.91,
+      "net_contribution_brl": 60179.73,
+      "net_margin_pct": 8.35
+    },
+    {
+      "order_year_month": "2017-10",
+      "orders_count": 4568,
+      "gmv_brl": 769312.37,
+      "net_contribution_brl": 71849.13,
+      "net_margin_pct": 9.34
+    },
+    {
+      "order_year_month": "2017-11",
+      "orders_count": 7451,
+      "gmv_brl": 1179143.77,
+      "net_contribution_brl": 77332.57,
+      "net_margin_pct": 6.56
+    },
+    {
+      "order_year_month": "2017-12",
+      "orders_count": 5624,
+      "gmv_brl": 863547.23,
+      "net_contribution_brl": 72786.05,
+      "net_margin_pct": 8.43
+    },
+    {
+      "order_year_month": "2018-01",
+      "orders_count": 7220,
+      "gmv_brl": 1107301.89,
+      "net_contribution_brl": 90146.86,
+      "net_margin_pct": 8.14
+    },
+    {
+      "order_year_month": "2018-02",
+      "orders_count": 6694,
+      "gmv_brl": 986908.96,
+      "net_contribution_brl": 65132.16,
+      "net_margin_pct": 6.6
+    },
+    {
+      "order_year_month": "2018-03",
+      "orders_count": 7188,
+      "gmv_brl": 1155126.82,
+      "net_contribution_brl": 58481.88,
+      "net_margin_pct": 5.06
+    },
+    {
+      "order_year_month": "2018-04",
+      "orders_count": 6934,
+      "gmv_brl": 1159698.04,
+      "net_contribution_brl": 103301.83,
+      "net_margin_pct": 8.91
+    },
+    {
+      "order_year_month": "2018-05",
+      "orders_count": 6853,
+      "gmv_brl": 1149781.82,
+      "net_contribution_brl": 96975.96,
+      "net_margin_pct": 8.43
+    },
+    {
+      "order_year_month": "2018-06",
+      "orders_count": 6160,
+      "gmv_brl": 1022677.11,
+      "net_contribution_brl": 97209.3,
+      "net_margin_pct": 9.51
+    },
+    {
+      "order_year_month": "2018-07",
+      "orders_count": 6273,
+      "gmv_brl": 1058728.03,
+      "net_contribution_brl": 74115.41,
+      "net_margin_pct": 7.0
+    },
+    {
+      "order_year_month": "2018-08",
+      "orders_count": 6452,
+      "gmv_brl": 1003308.47,
+      "net_contribution_brl": 103718.85,
+      "net_margin_pct": 10.34
+    }
+  ],
+  "cohort_retention": [
+    {
+      "acquisition_cohort_ym": "2017-01",
+      "cohort_customers": 764,
+      "repeat_customers": 58,
+      "repeat_rate_pct": 7.59,
+      "avg_ltv_brl": 186.29,
+      "avg_cac_brl": 19.87,
+      "avg_review_score": 4.04,
+      "late_delivery_pct": 3.27
+    },
+    {
+      "acquisition_cohort_ym": "2017-02",
+      "cohort_customers": 1752,
+      "repeat_customers": 73,
+      "repeat_rate_pct": 4.17,
+      "avg_ltv_brl": 170.62,
+      "avg_cac_brl": 20.19,
+      "avg_review_score": 4.02,
+      "late_delivery_pct": 3.14
+    },
+    {
+      "acquisition_cohort_ym": "2017-03",
+      "cohort_customers": 2636,
+      "repeat_customers": 130,
+      "repeat_rate_pct": 4.93,
+      "avg_ltv_brl": 176.69,
+      "avg_cac_brl": 19.51,
+      "avg_review_score": 4.08,
+      "late_delivery_pct": 5.65
+    },
+    {
+      "acquisition_cohort_ym": "2017-04",
+      "cohort_customers": 2352,
+      "repeat_customers": 108,
+      "repeat_rate_pct": 4.59,
+      "avg_ltv_brl": 183.31,
+      "avg_cac_brl": 19.56,
+      "avg_review_score": 4.05,
+      "late_delivery_pct": 7.7
+    },
+    {
+      "acquisition_cohort_ym": "2017-05",
+      "cohort_customers": 3596,
+      "repeat_customers": 198,
+      "repeat_rate_pct": 5.51,
+      "avg_ltv_brl": 169.84,
+      "avg_cac_brl": 19.82,
+      "avg_review_score": 4.14,
+      "late_delivery_pct": 3.87
+    },
+    {
+      "acquisition_cohort_ym": "2017-06",
+      "cohort_customers": 3139,
+      "repeat_customers": 173,
+      "repeat_rate_pct": 5.51,
+      "avg_ltv_brl": 168.02,
+      "avg_cac_brl": 20.4,
+      "avg_review_score": 4.14,
+      "late_delivery_pct": 4.21
+    },
+    {
+      "acquisition_cohort_ym": "2017-07",
+      "cohort_customers": 3894,
+      "repeat_customers": 186,
+      "repeat_rate_pct": 4.78,
+      "avg_ltv_brl": 154.54,
+      "avg_cac_brl": 19.77,
+      "avg_review_score": 4.18,
+      "late_delivery_pct": 3.49
+    },
+    {
+      "acquisition_cohort_ym": "2017-08",
+      "cohort_customers": 4184,
+      "repeat_customers": 197,
+      "repeat_rate_pct": 4.71,
+      "avg_ltv_brl": 164.23,
+      "avg_cac_brl": 19.94,
+      "avg_review_score": 4.24,
+      "late_delivery_pct": 3.39
+    },
+    {
+      "acquisition_cohort_ym": "2017-09",
+      "cohort_customers": 4130,
+      "repeat_customers": 190,
+      "repeat_rate_pct": 4.6,
+      "avg_ltv_brl": 177.99,
+      "avg_cac_brl": 20.06,
+      "avg_review_score": 4.19,
+      "late_delivery_pct": 5.16
+    },
+    {
+      "acquisition_cohort_ym": "2017-10",
+      "cohort_customers": 4470,
+      "repeat_customers": 170,
+      "repeat_rate_pct": 3.8,
+      "avg_ltv_brl": 175.49,
+      "avg_cac_brl": 20.1,
+      "avg_review_score": 4.12,
+      "late_delivery_pct": 5.55
+    },
+    {
+      "acquisition_cohort_ym": "2017-11",
+      "cohort_customers": 7304,
+      "repeat_customers": 235,
+      "repeat_rate_pct": 3.22,
+      "avg_ltv_brl": 164.31,
+      "avg_cac_brl": 19.91,
+      "avg_review_score": 3.9,
+      "late_delivery_pct": 14.06
+    },
+    {
+      "acquisition_cohort_ym": "2017-12",
+      "cohort_customers": 5487,
+      "repeat_customers": 154,
+      "repeat_rate_pct": 2.81,
+      "avg_ltv_brl": 159.39,
+      "avg_cac_brl": 19.68,
+      "avg_review_score": 4.02,
+      "late_delivery_pct": 8.44
+    },
+    {
+      "acquisition_cohort_ym": "2018-01",
+      "cohort_customers": 7025,
+      "repeat_customers": 218,
+      "repeat_rate_pct": 3.1,
+      "avg_ltv_brl": 158.11,
+      "avg_cac_brl": 20.03,
+      "avg_review_score": 4.04,
+      "late_delivery_pct": 6.59
+    },
+    {
+      "acquisition_cohort_ym": "2018-02",
+      "cohort_customers": 6451,
+      "repeat_customers": 244,
+      "repeat_rate_pct": 3.78,
+      "avg_ltv_brl": 154.09,
+      "avg_cac_brl": 19.85,
+      "avg_review_score": 3.83,
+      "late_delivery_pct": 15.9
+    },
+    {
+      "acquisition_cohort_ym": "2018-03",
+      "cohort_customers": 6965,
+      "repeat_customers": 174,
+      "repeat_rate_pct": 2.5,
+      "avg_ltv_brl": 165.43,
+      "avg_cac_brl": 19.54,
+      "avg_review_score": 3.75,
+      "late_delivery_pct": 21.05
+    },
+    {
+      "acquisition_cohort_ym": "2018-04",
+      "cohort_customers": 6711,
+      "repeat_customers": 133,
+      "repeat_rate_pct": 1.98,
+      "avg_ltv_brl": 170.67,
+      "avg_cac_brl": 19.92,
+      "avg_review_score": 4.16,
+      "late_delivery_pct": 5.2
+    },
+    {
+      "acquisition_cohort_ym": "2018-05",
+      "cohort_customers": 6622,
+      "repeat_customers": 115,
+      "repeat_rate_pct": 1.74,
+      "avg_ltv_brl": 171.8,
+      "avg_cac_brl": 19.7,
+      "avg_review_score": 4.19,
+      "late_delivery_pct": 8.26
+    },
+    {
+      "acquisition_cohort_ym": "2018-06",
+      "cohort_customers": 5940,
+      "repeat_customers": 73,
+      "repeat_rate_pct": 1.23,
+      "avg_ltv_brl": 168.11,
+      "avg_cac_brl": 19.63,
+      "avg_review_score": 4.27,
+      "late_delivery_pct": 1.43
+    },
+    {
+      "acquisition_cohort_ym": "2018-07",
+      "cohort_customers": 6071,
+      "repeat_customers": 104,
+      "repeat_rate_pct": 1.71,
+      "avg_ltv_brl": 173.88,
+      "avg_cac_brl": 19.93,
+      "avg_review_score": 4.26,
+      "late_delivery_pct": 4.48
+    },
+    {
+      "acquisition_cohort_ym": "2018-08",
+      "cohort_customers": 6271,
+      "repeat_customers": 51,
+      "repeat_rate_pct": 0.81,
+      "avg_ltv_brl": 158.02,
+      "avg_cac_brl": 19.67,
+      "avg_review_score": 4.26,
+      "late_delivery_pct": 10.25
+    }
+  ],
+  "funnel_stages": [
+    {
+      "funnel_exit_stage": "Order_Placed",
+      "sessions_count": 73461,
+      "pct_of_sessions": 50.5,
+      "avg_duration_sec": 700.1,
+      "avg_page_views": 10.54,
+      "orders_placed_count": 73461,
+      "orders_delivered_count": 71237
+    },
+    {
+      "funnel_exit_stage": "Product_Browse_Exit",
+      "sessions_count": 32050,
+      "pct_of_sessions": 22.03,
+      "avg_duration_sec": 252.2,
+      "avg_page_views": 6.23,
+      "orders_placed_count": 0,
+      "orders_delivered_count": 0
+    },
+    {
+      "funnel_exit_stage": "Cart_Abandonment",
+      "sessions_count": 20858,
+      "pct_of_sessions": 14.34,
+      "avg_duration_sec": 265.8,
+      "avg_page_views": 6.41,
+      "orders_placed_count": 0,
+      "orders_delivered_count": 0
+    },
+    {
+      "funnel_exit_stage": "Checkout_Dropoff",
+      "sessions_count": 9960,
+      "pct_of_sessions": 6.85,
+      "avg_duration_sec": 262.2,
+      "avg_page_views": 6.37,
+      "orders_placed_count": 0,
+      "orders_delivered_count": 0
+    },
+    {
+      "funnel_exit_stage": "Bounce_Landing",
+      "sessions_count": 9129,
+      "pct_of_sessions": 6.28,
+      "avg_duration_sec": 194.2,
+      "avg_page_views": 1.0,
+      "orders_placed_count": 0,
+      "orders_delivered_count": 0
+    }
+  ],
+  "top_categories": [
+    {
+      "product_category_english": "health_beauty",
+      "units_sold": 9670,
+      "gmv_brl": 1441248.07,
+      "net_contribution_brl": 134818.69,
+      "net_margin_pct": 9.35,
+      "delivered_return_rate_pct": 6.05
+    },
+    {
+      "product_category_english": "watches_gifts",
+      "units_sold": 5991,
+      "gmv_brl": 1305541.61,
+      "net_contribution_brl": 138146.61,
+      "net_margin_pct": 10.58,
+      "delivered_return_rate_pct": 7.07
+    },
+    {
+      "product_category_english": "bed_bath_table",
+      "units_sold": 11115,
+      "gmv_brl": 1241681.72,
+      "net_contribution_brl": 87778.4,
+      "net_margin_pct": 7.07,
+      "delivered_return_rate_pct": 8.19
+    },
+    {
+      "product_category_english": "sports_leisure",
+      "units_sold": 8641,
+      "gmv_brl": 1156656.48,
+      "net_contribution_brl": 100851.7,
+      "net_margin_pct": 8.72,
+      "delivered_return_rate_pct": 6.61
+    },
+    {
+      "product_category_english": "computers_accessories",
+      "units_sold": 7827,
+      "gmv_brl": 1059272.4,
+      "net_contribution_brl": 86013.71,
+      "net_margin_pct": 8.12,
+      "delivered_return_rate_pct": 7.57
+    },
+    {
+      "product_category_english": "furniture_decor",
+      "units_sold": 8334,
+      "gmv_brl": 902511.79,
+      "net_contribution_brl": 48090.19,
+      "net_margin_pct": 5.33,
+      "delivered_return_rate_pct": 8.01
+    },
+    {
+      "product_category_english": "housewares",
+      "units_sold": 6964,
+      "gmv_brl": 778397.77,
+      "net_contribution_brl": 57060.42,
+      "net_margin_pct": 7.33,
+      "delivered_return_rate_pct": 6.65
+    },
+    {
+      "product_category_english": "cool_stuff",
+      "units_sold": 3796,
+      "gmv_brl": 719329.95,
+      "net_contribution_brl": 57399.69,
+      "net_margin_pct": 7.98,
+      "delivered_return_rate_pct": 5.73
+    },
+    {
+      "product_category_english": "auto",
+      "units_sold": 4235,
+      "gmv_brl": 685384.32,
+      "net_contribution_brl": 50244.8,
+      "net_margin_pct": 7.33,
+      "delivered_return_rate_pct": 7.08
+    },
+    {
+      "product_category_english": "garden_tools",
+      "units_sold": 4347,
+      "gmv_brl": 584219.21,
+      "net_contribution_brl": 48514.45,
+      "net_margin_pct": 8.3,
+      "delivered_return_rate_pct": 7.03
+    },
+    {
+      "product_category_english": "toys",
+      "units_sold": 4117,
+      "gmv_brl": 561372.55,
+      "net_contribution_brl": 51692.31,
+      "net_margin_pct": 9.21,
+      "delivered_return_rate_pct": 5.76
+    },
+    {
+      "product_category_english": "baby",
+      "units_sold": 3065,
+      "gmv_brl": 480118.0,
+      "net_contribution_brl": 42195.14,
+      "net_margin_pct": 8.79,
+      "delivered_return_rate_pct": 6.54
+    },
+    {
+      "product_category_english": "perfumery",
+      "units_sold": 3419,
+      "gmv_brl": 453338.71,
+      "net_contribution_brl": 54946.93,
+      "net_margin_pct": 12.12,
+      "delivered_return_rate_pct": 5.72
+    },
+    {
+      "product_category_english": "telephony",
+      "units_sold": 4545,
+      "gmv_brl": 394883.32,
+      "net_contribution_brl": 31092.99,
+      "net_margin_pct": 7.87,
+      "delivered_return_rate_pct": 7.04
+    },
+    {
+      "product_category_english": "office_furniture",
+      "units_sold": 1691,
+      "gmv_brl": 342532.65,
+      "net_contribution_brl": 17364.83,
+      "net_margin_pct": 5.07,
+      "delivered_return_rate_pct": 9.17
+    }
+  ],
+  "marketing_channels": [
+    {
+      "marketing_channel": "Paid Social",
+      "campaigns_count": 20,
+      "actual_spend_brl": 713901.54,
+      "acquired_customers": 24622,
+      "attributed_gmv_brl": 4140177.72,
+      "roas_x": 5.8,
+      "effective_cac_brl": 28.99,
+      "repeat_rate_pct": 3.2
+    },
+    {
+      "marketing_channel": "Paid Search",
+      "campaigns_count": 10,
+      "actual_spend_brl": 880190.92,
+      "acquired_customers": 23146,
+      "attributed_gmv_brl": 3851789.98,
+      "roas_x": 4.38,
+      "effective_cac_brl": 38.03,
+      "repeat_rate_pct": 3.19
+    },
+    {
+      "marketing_channel": "Organic / SEO",
+      "campaigns_count": 10,
+      "actual_spend_brl": 0.0,
+      "acquired_customers": 13448,
+      "attributed_gmv_brl": 2243655.92,
+      "roas_x": NaN,
+      "effective_cac_brl": 0.0,
+      "repeat_rate_pct": 2.98
+    },
+    {
+      "marketing_channel": "CRM / Email",
+      "campaigns_count": 10,
+      "actual_spend_brl": 125734.01,
+      "acquired_customers": 8694,
+      "attributed_gmv_brl": 1446088.36,
+      "roas_x": 11.5,
+      "effective_cac_brl": 14.46,
+      "repeat_rate_pct": 3.01
+    },
+    {
+      "marketing_channel": "Affiliate",
+      "campaigns_count": 10,
+      "actual_spend_brl": 194497.86,
+      "acquired_customers": 7849,
+      "attributed_gmv_brl": 1305678.47,
+      "roas_x": 6.71,
+      "effective_cac_brl": 24.78,
+      "repeat_rate_pct": 3.02
+    },
+    {
+      "marketing_channel": "Price Comparison",
+      "campaigns_count": 10,
+      "actual_spend_brl": 211989.6,
+      "acquired_customers": 7752,
+      "attributed_gmv_brl": 1267587.83,
+      "roas_x": 5.98,
+      "effective_cac_brl": 27.35,
+      "repeat_rate_pct": 3.04
+    },
+    {
+      "marketing_channel": "Display / Retargeting",
+      "campaigns_count": 10,
+      "actual_spend_brl": 223572.53,
+      "acquired_customers": 6743,
+      "attributed_gmv_brl": 1126047.79,
+      "roas_x": 5.04,
+      "effective_cac_brl": 33.16,
+      "repeat_rate_pct": 3.06
+    },
+    {
+      "marketing_channel": "Influencer / Content",
+      "campaigns_count": 10,
+      "actual_spend_brl": 161620.61,
+      "acquired_customers": 3842,
+      "attributed_gmv_brl": 627846.05,
+      "roas_x": 3.88,
+      "effective_cac_brl": 42.07,
+      "repeat_rate_pct": 3.31
+    }
+  ],
+  "returns_breakdown": [
+    {
+      "return_reason": "Defective_or_Damaged_Item",
+      "resolution_outcome": "Full_Refund",
+      "return_items": 1822,
+      "refunded_brl": 252531.2,
+      "reverse_shipping_brl": 37979.2
+    },
+    {
+      "return_reason": "Not_As_Described",
+      "resolution_outcome": "Full_Refund",
+      "return_items": 1229,
+      "refunded_brl": 172332.82,
+      "reverse_shipping_brl": 25294.51
+    },
+    {
+      "return_reason": "Buyer_Remorse_7Day_CDC",
+      "resolution_outcome": "Full_Refund",
+      "return_items": 908,
+      "refunded_brl": 133054.91,
+      "reverse_shipping_brl": 18661.5
+    },
+    {
+      "return_reason": "Wrong_Item_Sent",
+      "resolution_outcome": "Full_Refund",
+      "return_items": 908,
+      "refunded_brl": 124171.94,
+      "reverse_shipping_brl": 18331.97
+    },
+    {
+      "return_reason": "Late_Delivery_Regret",
+      "resolution_outcome": "Full_Refund",
+      "return_items": 815,
+      "refunded_brl": 111551.3,
+      "reverse_shipping_brl": 16555.14
+    },
+    {
+      "return_reason": "Defective_or_Damaged_Item",
+      "resolution_outcome": "Partial_Refund_Keep_Item",
+      "return_items": 274,
+      "refunded_brl": 14095.48,
+      "reverse_shipping_brl": 0.0
+    },
+    {
+      "return_reason": "Defective_or_Damaged_Item",
+      "resolution_outcome": "Exchange_Replacement",
+      "return_items": 229,
+      "refunded_brl": 0.0,
+      "reverse_shipping_brl": 4655.29
+    },
+    {
+      "return_reason": "Not_As_Described",
+      "resolution_outcome": "Partial_Refund_Keep_Item",
+      "return_items": 210,
+      "refunded_brl": 11173.5,
+      "reverse_shipping_brl": 0.0
+    },
+    {
+      "return_reason": "Not_As_Described",
+      "resolution_outcome": "Exchange_Replacement",
+      "return_items": 162,
+      "refunded_brl": 0.0,
+      "reverse_shipping_brl": 2835.08
+    },
+    {
+      "return_reason": "Wrong_Item_Sent",
+      "resolution_outcome": "Partial_Refund_Keep_Item",
+      "return_items": 149,
+      "refunded_brl": 8501.87,
+      "reverse_shipping_brl": 0.0
+    },
+    {
+      "return_reason": "Buyer_Remorse_7Day_CDC",
+      "resolution_outcome": "Partial_Refund_Keep_Item",
+      "return_items": 136,
+      "refunded_brl": 8174.89,
+      "reverse_shipping_brl": 0.0
+    },
+    {
+      "return_reason": "Late_Delivery_Regret",
+      "resolution_outcome": "Partial_Refund_Keep_Item",
+      "return_items": 122,
+      "refunded_brl": 8596.65,
+      "reverse_shipping_brl": 0.0
+    },
+    {
+      "return_reason": "Wrong_Item_Sent",
+      "resolution_outcome": "Exchange_Replacement",
+      "return_items": 122,
+      "refunded_brl": 0.0,
+      "reverse_shipping_brl": 2835.4
+    },
+    {
+      "return_reason": "Buyer_Remorse_7Day_CDC",
+      "resolution_outcome": "Exchange_Replacement",
+      "return_items": 113,
+      "refunded_brl": 0.0,
+      "reverse_shipping_brl": 2200.91
+    },
+    {
+      "return_reason": "Defective_or_Damaged_Item",
+      "resolution_outcome": "Rejected_Policy_Violation",
+      "return_items": 105,
+      "refunded_brl": 0.0,
+      "reverse_shipping_brl": 0.0
+    },
+    {
+      "return_reason": "Late_Delivery_Regret",
+      "resolution_outcome": "Exchange_Replacement",
+      "return_items": 99,
+      "refunded_brl": 0.0,
+      "reverse_shipping_brl": 1970.91
+    },
+    {
+      "return_reason": "Not_As_Described",
+      "resolution_outcome": "Rejected_Policy_Violation",
+      "return_items": 67,
+      "refunded_brl": 0.0,
+      "reverse_shipping_brl": 0.0
+    },
+    {
+      "return_reason": "Wrong_Item_Sent",
+      "resolution_outcome": "Rejected_Policy_Violation",
+      "return_items": 62,
+      "refunded_brl": 0.0,
+      "reverse_shipping_brl": 0.0
+    },
+    {
+      "return_reason": "Buyer_Remorse_7Day_CDC",
+      "resolution_outcome": "Rejected_Policy_Violation",
+      "return_items": 42,
+      "refunded_brl": 0.0,
+      "reverse_shipping_brl": 0.0
+    },
+    {
+      "return_reason": "Late_Delivery_Regret",
+      "resolution_outcome": "Rejected_Policy_Violation",
+      "return_items": 42,
+      "refunded_brl": 0.0,
+      "reverse_shipping_brl": 0.0
+    }
+  ],
+  "cancellations_breakdown": [
+    {
+      "cancellation_stage": "Cancelled_Before_Shipment",
+      "cancellation_reason": "Customer_Changed_Mind_Pre_Ship",
+      "cancellation_rows": 243,
+      "canceled_orders": 212,
+      "eligible_payment_brl": 46825.4,
+      "refunded_brl": 46825.4,
+      "intercept_cost_brl": 0.0
+    },
+    {
+      "cancellation_stage": "Cancelled_Before_Shipment",
+      "cancellation_reason": "Seller_Out_Of_Stock_Cancel",
+      "cancellation_rows": 128,
+      "canceled_orders": 122,
+      "eligible_payment_brl": 24558.04,
+      "refunded_brl": 24558.04,
+      "intercept_cost_brl": 0.0
+    },
+    {
+      "cancellation_stage": "Cancelled_Before_Shipment",
+      "cancellation_reason": "SLA_Dispatch_Timeout",
+      "cancellation_rows": 95,
+      "canceled_orders": 90,
+      "eligible_payment_brl": 25634.62,
+      "refunded_brl": 25634.62,
+      "intercept_cost_brl": 0.0
+    },
+    {
+      "cancellation_stage": "Cancelled_Before_Shipment",
+      "cancellation_reason": "Payment_Gateway_Timeout",
+      "cancellation_rows": 76,
+      "canceled_orders": 76,
+      "eligible_payment_brl": 17602.48,
+      "refunded_brl": 17602.48,
+      "intercept_cost_brl": 0.0
+    },
+    {
+      "cancellation_stage": "Cancelled_Before_Shipment",
+      "cancellation_reason": "Seller_Stock_Unavailable",
+      "cancellation_rows": 49,
+      "canceled_orders": 49,
+      "eligible_payment_brl": 12898.93,
+      "refunded_brl": 12898.93,
+      "intercept_cost_brl": 0.0
+    },
+    {
+      "cancellation_stage": "Cancelled_After_Shipment",
+      "cancellation_reason": "Customer_Refused_Delivery",
+      "cancellation_rows": 43,
+      "canceled_orders": 43,
+      "eligible_payment_brl": 5222.16,
+      "refunded_brl": 4900.16,
+      "intercept_cost_brl": 507.73
+    },
+    {
+      "cancellation_stage": "Cancelled_Before_Shipment",
+      "cancellation_reason": "Customer_Cancelled_Pre_Approval",
+      "cancellation_rows": 39,
+      "canceled_orders": 39,
+      "eligible_payment_brl": 6836.46,
+      "refunded_brl": 6836.46,
+      "intercept_cost_brl": 0.0
+    },
+    {
+      "cancellation_stage": "Cancelled_After_Shipment",
+      "cancellation_reason": "Customer_In_Transit_Cancel",
+      "cancellation_rows": 18,
+      "canceled_orders": 18,
+      "eligible_payment_brl": 1760.96,
+      "refunded_brl": 1678.09,
+      "intercept_cost_brl": 221.97
+    },
+    {
+      "cancellation_stage": "Cancelled_After_Shipment",
+      "cancellation_reason": "Carrier_Transit_Loss_Damage",
+      "cancellation_rows": 15,
+      "canceled_orders": 14,
+      "eligible_payment_brl": 1884.54,
+      "refunded_brl": 1835.7,
+      "intercept_cost_brl": 216.48
+    }
+  ],
+  "fulfillment_states": [
+    {
+      "fulfillment_state": "Delivered",
+      "shipments_count": 96470,
+      "freight_charged_brl": 2198145.9,
+      "carrier_cost_brl": 2043547.08,
+      "freight_margin_brl": 154598.82
+    },
+    {
+      "fulfillment_state": "In_Transit",
+      "shipments_count": 1113,
+      "freight_charged_brl": 26516.64,
+      "carrier_cost_brl": 24894.42,
+      "freight_margin_brl": 1622.22
+    },
+    {
+      "fulfillment_state": "Cancelled_After_Shipment",
+      "shipments_count": 75,
+      "freight_charged_brl": 1363.72,
+      "carrier_cost_brl": 1254.14,
+      "freight_margin_brl": 109.58
+    }
+  ],
+  "carrier_kpis": [
+    {
+      "carrier_name": "Correios PAC",
+      "service_tier": "Standard",
+      "delivered_shipments": 40558,
+      "late_delivery_pct": 8.22,
+      "avg_variance_days": -11.16,
+      "avg_freight_margin_brl": 1.59,
+      "avg_review_score": 4.16
+    },
+    {
+      "carrier_name": "Correios SEDEX",
+      "service_tier": "Express",
+      "delivered_shipments": 23038,
+      "late_delivery_pct": 7.9,
+      "avg_variance_days": -11.24,
+      "avg_freight_margin_brl": 1.61,
+      "avg_review_score": 4.15
+    },
+    {
+      "carrier_name": "Jadlog",
+      "service_tier": "Standard",
+      "delivered_shipments": 13552,
+      "late_delivery_pct": 8.13,
+      "avg_variance_days": -11.14,
+      "avg_freight_margin_brl": 1.61,
+      "avg_review_score": 4.16
+    },
+    {
+      "carrier_name": "Total Express",
+      "service_tier": "Standard",
+      "delivered_shipments": 9559,
+      "late_delivery_pct": 7.76,
+      "avg_variance_days": -11.27,
+      "avg_freight_margin_brl": 1.59,
+      "avg_review_score": 4.17
+    },
+    {
+      "carrier_name": "Loggi",
+      "service_tier": "Express",
+      "delivered_shipments": 4889,
+      "late_delivery_pct": 8.04,
+      "avg_variance_days": -11.02,
+      "avg_freight_margin_brl": 1.61,
+      "avg_review_score": 4.14
+    },
+    {
+      "carrier_name": "Azul Cargo Express",
+      "service_tier": "Express",
+      "delivered_shipments": 4874,
+      "late_delivery_pct": 8.82,
+      "avg_variance_days": -11.13,
+      "avg_freight_margin_brl": 1.66,
+      "avg_review_score": 4.14
+    }
+  ],
+  "inventory_trends": [
+    {
+      "snapshot_date": "2018-07-01",
+      "active_sku_seller_pairs": 34448,
+      "opening_units": 601940,
+      "received_units": 16446,
+      "sold_units": 7008,
+      "closing_units": 611378,
+      "available_units": 559951,
+      "stockout_skus": 18,
+      "ending_valuation_cogs_brl": 47707438.85
+    },
+    {
+      "snapshot_date": "2018-08-01",
+      "active_sku_seller_pairs": 34448,
+      "opening_units": 611378,
+      "received_units": 3462,
+      "sold_units": 7003,
+      "closing_units": 607837,
+      "available_units": 556234,
+      "stockout_skus": 17,
+      "ending_valuation_cogs_brl": 47423010.92
+    },
+    {
+      "snapshot_date": "2018-09-01",
+      "active_sku_seller_pairs": 34448,
+      "opening_units": 607837,
+      "received_units": 3792,
+      "sold_units": 7038,
+      "closing_units": 604591,
+      "available_units": 552931,
+      "stockout_skus": 34,
+      "ending_valuation_cogs_brl": 47171052.96
+    },
+    {
+      "snapshot_date": "2018-10-01",
+      "active_sku_seller_pairs": 34448,
+      "opening_units": 604591,
+      "received_units": 4107,
+      "sold_units": 1,
+      "closing_units": 608697,
+      "available_units": 557174,
+      "stockout_skus": 0,
+      "ending_valuation_cogs_brl": 47432952.03
+    }
+  ],
+  "support_summary": [
+    {
+      "issue_category": "Product_Return_RMA_Inquiry",
+      "tickets_count": 5916,
+      "avg_first_response_min": 60.5,
+      "avg_resolution_hours": 24.2,
+      "sla_breach_pct": 10.6,
+      "avg_csat_score": 3.29
+    },
+    {
+      "issue_category": "Where_Is_My_Order_WISMO",
+      "tickets_count": 3568,
+      "avg_first_response_min": 61.7,
+      "avg_resolution_hours": 26.51,
+      "sla_breach_pct": 13.4,
+      "avg_csat_score": 3.45
+    },
+    {
+      "issue_category": "Product_Quality_or_Defect",
+      "tickets_count": 2527,
+      "avg_first_response_min": 59.3,
+      "avg_resolution_hours": 24.64,
+      "sla_breach_pct": 11.12,
+      "avg_csat_score": 3.32
+    },
+    {
+      "issue_category": "Payment_or_Boleto_Issue",
+      "tickets_count": 1846,
+      "avg_first_response_min": 56.3,
+      "avg_resolution_hours": 25.16,
+      "sla_breach_pct": 12.57,
+      "avg_csat_score": 3.29
+    },
+    {
+      "issue_category": "Seller_Communication_Delay",
+      "tickets_count": 1431,
+      "avg_first_response_min": 60.8,
+      "avg_resolution_hours": 25.43,
+      "sla_breach_pct": 11.88,
+      "avg_csat_score": 3.35
+    },
+    {
+      "issue_category": "Address_or_Invoice_Change",
+      "tickets_count": 1391,
+      "avg_first_response_min": 62.2,
+      "avg_resolution_hours": 25.71,
+      "sla_breach_pct": 12.44,
+      "avg_csat_score": 3.31
+    },
+    {
+      "issue_category": "Order_Cancellation_Refund_Inquiry",
+      "tickets_count": 522,
+      "avg_first_response_min": 62.1,
+      "avg_resolution_hours": 24.3,
+      "sla_breach_pct": 11.88,
+      "avg_csat_score": 3.17
+    }
+  ]
+}

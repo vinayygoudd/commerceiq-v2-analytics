@@ -1,0 +1,147 @@
+{
+  "observational_studies": [
+    {
+      "study_id": "STAT-OBS-01",
+      "title": "Impact of Late Delivery on Customer Review Scores (Delivered Orders)",
+      "data_provenance": "OBSERVATIONAL (Original Olist Timestamps & Review Scores)",
+      "n_on_time": 88169,
+      "n_late": 7655,
+      "mean_review_on_time": 4.2943,
+      "mean_review_late": 2.5651,
+      "difference_in_means": 1.7292,
+      "ci_95_difference": [
+        1.6913,
+        1.7671
+      ],
+      "assumption_checks": {
+        "shapiro_wilk_on_time_p": 3.2471727455182426e-53,
+        "shapiro_wilk_late_p": 1.1709136715625059e-46,
+        "levene_equal_variance_p": 0.0,
+        "normality_satisfied": false,
+        "recommended_primary_test": "Mann-Whitney U + Welch's t-test (large-sample CLT)"
+      },
+      "hypothesis_tests": {
+        "welch_t_stat": 89.4341,
+        "welch_p_value": 0.0,
+        "mann_whitney_u_stat": 524484849.5,
+        "mann_whitney_p_value": 0.0
+      },
+      "effect_size_cohens_d": 1.4471,
+      "effect_magnitude": "Large (|d| > 0.80)"
+    },
+    {
+      "study_id": "STAT-OBS-02",
+      "title": "Interstate vs. Intrastate Shipping Delay & Late-Rate Independence Test",
+      "data_provenance": "OBSERVATIONAL (Original Olist Seller/Customer States & Delivery Dates)",
+      "n_intrastate": 34490,
+      "n_interstate": 61334,
+      "mean_variance_days_intrastate": -9.649,
+      "mean_variance_days_interstate": -12.096,
+      "welch_t_stat": -39.9014,
+      "welch_p_value": 0.0,
+      "cohens_d": -0.2436,
+      "chi_square_late_vs_interstate": {
+        "chi2_stat": 287.2867,
+        "p_value": 1.9398097088085445e-64,
+        "dof": 1,
+        "cramers_v": 0.0548
+      }
+    },
+    {
+      "study_id": "STAT-OBS-03",
+      "title": "Multiple Linear Regression (OLS): Logistics & Freight Drivers of Olist Review Score",
+      "data_provenance": "OBSERVATIONAL (Original Olist Data)",
+      "n_observations": 95824,
+      "r_squared": 0.1455,
+      "coefficients": [
+        {
+          "term": "Intercept",
+          "coefficient": 4.31199,
+          "std_error": 0.00877,
+          "t_stat": 491.75,
+          "p_value": 0.0
+        },
+        {
+          "term": "is_late_delivery",
+          "coefficient": -1.45355,
+          "std_error": 0.01794,
+          "t_stat": -81.021,
+          "p_value": 0.0
+        },
+        {
+          "term": "delivery_variance_days",
+          "coefficient": -0.01145,
+          "std_error": 0.00048,
+          "t_stat": -23.682,
+          "p_value": 0.0
+        },
+        {
+          "term": "customer_freight_charged_brl",
+          "coefficient": -0.00464,
+          "std_error": 0.00018,
+          "t_stat": -25.172,
+          "p_value": 0.0
+        },
+        {
+          "term": "is_interstate_shipment",
+          "coefficient": -0.09769,
+          "std_error": 0.0084,
+          "t_stat": -11.637,
+          "p_value": 0.0
+        }
+      ]
+    }
+  ],
+  "synthetic_assumption_audits": [
+    {
+      "study_id": "STAT-SYNTH-04",
+      "title": "Support 48h SLA Breach Impact on Post-Ticket CSAT Score",
+      "data_provenance": "SYNTHETIC ASSUMPTION (Engineered in commerceiq_customer_support_tickets.csv \u2014 Not an Empirical Discovery)",
+      "n_in_sla": 15178,
+      "n_breached_sla": 2023,
+      "mean_csat_in_sla": 3.553,
+      "mean_csat_breached": 1.654,
+      "welch_t_stat": 104.63,
+      "welch_p_value": 0.0,
+      "cohens_d": 1.955
+    }
+  ],
+  "ab_testing_power_designs": [
+    {
+      "experiment_name": "EXP-01: Second-Order Win-Back Coupon (Improving Repeat Purchase Rate from 3.12% to 3.87%)",
+      "baseline_conversion_rate": 0.0312,
+      "treatment_target_rate": 0.0387,
+      "absolute_mde": 0.0075,
+      "relative_lift_pct": 24.04,
+      "alpha_two_sided": 0.05,
+      "target_power": 0.8,
+      "achieved_power": 0.8,
+      "required_sample_size_per_arm": 9412,
+      "total_required_sample_size": 18824
+    },
+    {
+      "experiment_name": "EXP-02: Checkout One-Click Boleto/PIX Flow (Reducing Checkout Drop-Off by +2.5% Absolute Conversion Lift)",
+      "baseline_conversion_rate": 0.505,
+      "treatment_target_rate": 0.53,
+      "absolute_mde": 0.025,
+      "relative_lift_pct": 4.95,
+      "alpha_two_sided": 0.05,
+      "target_power": 0.8,
+      "achieved_power": 0.8,
+      "required_sample_size_per_arm": 6271,
+      "total_required_sample_size": 12542
+    },
+    {
+      "experiment_name": "EXP-03: Proactive WhatsApp Delay Notification (Reducing Late-Delivery 1-Star Review Rate by -4.0% Absolute)",
+      "baseline_conversion_rate": 0.42,
+      "treatment_target_rate": 0.38,
+      "absolute_mde": -0.04,
+      "relative_lift_pct": -9.52,
+      "alpha_two_sided": 0.05,
+      "target_power": 0.85,
+      "achieved_power": 0.85,
+      "required_sample_size_per_arm": 2692,
+      "total_required_sample_size": 5384
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+carrier_name,service_tier,delivered_shipments,late_delivery_pct,avg_variance_days,avg_freight_margin_brl,avg_review_score
+Correios PAC,Standard,40558,8.22,-11.16,1.59,4.16
+Correios SEDEX,Express,23038,7.9,-11.24,1.61,4.15
+Jadlog,Standard,13552,8.13,-11.14,1.61,4.16
+Total Express,Standard,9559,7.76,-11.27,1.59,4.17
+Loggi,Express,4889,8.04,-11.02,1.61,4.14
+Azul Cargo Express,Express,4874,8.82,-11.13,1.66,4.14

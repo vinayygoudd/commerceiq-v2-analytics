@@ -1,0 +1,6 @@
+funnel_exit_stage,sessions_count,pct_of_sessions,avg_duration_sec,avg_page_views,orders_placed_count,orders_delivered_count
+Order_Placed,73461,50.5,700.1,10.54,73461,71237
+Product_Browse_Exit,32050,22.03,252.2,6.23,0,0
+Cart_Abandonment,20858,14.34,265.8,6.41,0,0
+Checkout_Dropoff,9960,6.85,262.2,6.37,0,0
+Bounce_Landing,9129,6.28,194.2,1.0,0,0
